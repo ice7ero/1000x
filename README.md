@@ -1,7 +1,7 @@
 # UI Interface
 
 Contributing
-Thank you for your interest in contributing to the Uniswap interface! 🦄
+Thank you for your interest in contributing to the 
 
 Development
 Before running anything, you'll need to install the dependencies:
