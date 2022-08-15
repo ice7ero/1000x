@@ -13,7 +13,6 @@ import {
   Stat,
   StatPair,
   StatsSection,
-  TimeOptionsContainer,
   TokenInfoContainer,
   TokenNameCell,
   TopArea,
@@ -57,6 +56,7 @@ const StatsLoadingContainer = styled.div`
 const ChartAnimation = styled.div`
   display: flex;
   animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  overflow: hidden;
 
   @keyframes wave {
     0% {
@@ -70,6 +70,7 @@ const ChartAnimation = styled.div`
 const Space = styled.div<{ heightSize: number }>`
   height: ${({ heightSize }) => `${heightSize}px`};
 `
+
 /* Loading State: row component with loading bubbles */
 export default function LoadingTokenDetail() {
   return (
@@ -113,9 +114,7 @@ export default function LoadingTokenDetail() {
             </ChartAnimation>
           </ChartWrapper>
         </ChartContainer>
-        <TimeOptionsContainer>
-          <Space heightSize={32} />
-        </TimeOptionsContainer>
+        <Space heightSize={32} />
       </ChartHeader>
       <AboutSection>
         <AboutHeader>
